@@ -1,6 +1,6 @@
 # `@bijink/prettier-config`
 
-> Personal [Prettier](https://prettier.io) configuration
+> Personal [Prettier](https://prettier.io) configuration for JavaScript
 
 ## Usage
 
