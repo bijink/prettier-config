@@ -1,0 +1,19 @@
+{
+  "name": "@bijink/prettier-config",
+  "version": "1.0.1",
+  "description": "Prettier Config",
+  "author": "Bijin K",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bijink/prettier-config"
+  },
+  "homepage": "https://github.com/bijink/prettier-config",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
