@@ -13,7 +13,7 @@ $ yarn add -D @bijink/prettier-config
 ```
 
 ## Usage
-**Edit `package.json`**:
+**Edit `package.json`** :
 
 ```json
 {
@@ -30,7 +30,7 @@ $ yarn add -D @bijink/prettier-config
 ```
 **Or**
 
-Create **`.prettierrc.json`** in root directory and add
+Create **`.prettierrc.json`** file in root directory and add
 ```json
 "@bijink/prettier-config"
 ```
