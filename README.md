@@ -1,22 +1,36 @@
 # `@bijink/prettier-config`
 
-> Personal [Prettier](https://prettier.io) configuration for JavaScript
+> Personal [Prettier](https://prettier.io) configuration
 
-## Usage
-
-**Install**:
+## Install
 
 ```bash
-$ npm i --save-dev @bijink/prettier-config
-
+$ npm i -D @bijink/prettier-config
+# or
+$ pnpm add -D @bijink/prettier-config
+# or
 $ yarn add -D @bijink/prettier-config
 ```
 
+## Usage
 **Edit `package.json`**:
 
-```jsonc
+```json
 {
   // ...
   "prettier": "@bijink/prettier-config"
+
+  // #optional
+   "scripts": {
+     // ...
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
 }
+```
+**Or**
+
+Create **`.prettierrc.json`** in root directory and add
+```json
+"@bijink/prettier-config"
 ```
