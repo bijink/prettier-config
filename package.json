@@ -1,9 +1,10 @@
 {
   "name": "@bijink/prettier-config",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "Prettier configuration",
   "author": "Bijin Kandengala",
-  "main": "index.json",
+  "main": "index.js",
+  "types": "index.d.ts",
   "keywords": [
     "prettier",
     "prettier-config"

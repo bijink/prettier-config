@@ -3,24 +3,42 @@
 > Personal [Prettier](https://prettier.io) configuration
 
 ## Install
-
 ```bash
-$ npm i -D @bijink/prettier-config
+$ npm i -D prettier @bijink/prettier-config
 # or
-$ pnpm add -D @bijink/prettier-config
+$ pnpm add -D prettier @bijink/prettier-config
 # or
-$ yarn add -D @bijink/prettier-config
+$ yarn add -D prettier @bijink/prettier-config
 ```
 
 ## Usage
-**Edit `package.json`** :
-
-```json
+Edit **`package.json`**:
+```js
 {
   // ...
   "prettier": "@bijink/prettier-config"
+}
+```
+##### Or
+Create **`.prettierrc.json`** file in the root directory and add: 
+```json
+"@bijink/prettier-config"
+```
+##### Or
+To extend the configuration to overwrite the properties from **@bijink/prettier-config** configuration. Create **`.prettierrc.js`** file in the root directory. Then import the configuration and export the modifications, e.g:
+```js
+import prettierConfig from "@bijink/prettier-config";
 
-  // #optional
+export default {
+  ...prettierConfig,
+  semi: false,
+};
+```
+
+### Optional
+To add scripts for prettier commands, edit **`package.json`**:
+```js
+{
    "scripts": {
      // ...
     "format": "prettier . --write",
@@ -28,9 +46,5 @@ $ yarn add -D @bijink/prettier-config
   },
 }
 ```
-**Or**
 
-Create **`.prettierrc.json`** file in root directory and add
-```json
-"@bijink/prettier-config"
-```
+*To know more about Prettier **configuration sharing**, [click](https://prettier.io/docs/en/configuration#sharing-configurations).*
